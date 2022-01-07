@@ -1,0 +1,109 @@
+Repository Description:
+
+The repository I chose was the jupyter notebook used by Pierian Data's NLP Course on Udemy.
+https://www.udemy.com/course/nlp-natural-language-processing-with-python/
+
+The course and notebooks are split into 7 sections
+
+Section 1: Python Text Basics
+	- Understanding Strings and F-Strings
+	- Opening Text Files
+	- Reading Text Files
+	- Using the Seek() Function to Move the File Pointer
+	- Writing Text Files
+	- Appending to a Text File
+	- Using PyPDF2 to Open PDF Files
+	- Reading a Specific Page in a PDF File
+	- Adding Pages to a PDF File
+	- Regular Expressions (RegEx)
+	- Using the "re" Python Library
+	- Creating Match Objects by Looking for Patterns in Strings
+	- Finding Multiple Matches of a Pattern in Strings
+	- Using Identifiers and Quantifiers in RegEx
+	- Using the Or Operator ('|') in RegEx
+	- Using the Wildcard Character ('.') in RegEx
+	- Using the Repetition Operators ('+' and '*') in RegEx
+	- Using the Starts With ('^') and Ends With Characters ('$') in RegEx
+	- Grouping with Parentheses in RegEx
+
+Section 2: NLP Python Basics
+	- Using Spacy to Create a Doc Object
+	- Splitting a String into Tokens
+	- Finding a Token's Part of Speech
+	- Finding a Token's Syntactic Dependencies
+	- Understanding the Spacy Pipeline and its Components
+	- Splitting a String into Sentences
+	- Finding a String's Named Entities and Proper Nouns
+	- Finding a String's Noun Chunks
+	- Using Displacy to Visualize Dependencies
+	- Using Displacy to Visualize Entities
+	- Using NLTK's Porter and Snowball Stemmer to Find a Word's Stem
+	- Using Spacy's Built-In Lemmatization to Find a Token's Lemma
+	- Adding and Deleting Phrases in Spacy's "Stop Word" List
+	- Using Spacy's Built-In RegEx to Match Patterns in a Doc Object
+
+Section 3: Parts of Speech Tagging
+	- Using the pos_, tag_, and spacy.explain() Attributes to Determine Parts of Speech
+	- Counting the Number of Words with each Part of Speech in a String
+	- Counting the Number of Words with each Tag in a String
+	- Counting the Number of Words with each Dependency in a String
+	- Using Displacy to Visualize Parts of Speech
+	- Recognizing Named Entities (Like Companies or Countries)
+	- Counting the Number of Named Entities in a String
+	- Counting the Number of Noun Chunks in a String
+	- Using Displacy to Visualize Named Entities
+	- Creating Functions to add Custom Rules in the Pipeline
+	- Splitting Sentences through Specific Characters (Colons and Semi-Colons)
+
+Section 4: Text Classification
+	- Using Pandas to Store Data in a Dataframe
+	- Printing a Dataframe's Contents
+	- Finding any Null or NaN Objects in a Dataframe
+	- Using Matplotlib to Create a Histogram of the Word Count
+	- Using Scikit-Learn to Split the Data into Training and Test Sets
+	- Using Scikit-Learn to Perform a Logistic Regression on the Training Set
+	- Evaluating the Logistic Regression's Accuracy Using the Testing Set
+	- Using Scikit-Learn to Train a Bayes Classifier
+	- Running the Bayes Classifier to Create Predictions
+	- Using Scikit-Learn to Train a Support Vector Machine (SVM)
+	- Running the SVM to Create Predictions
+	- Creating a Dictionary that Links Words to an Array Position
+	- Creating an Array that Stores Word Count using the Positions in the Dictionary
+	- Using Scikit-Learn to Scale the Word Frequency using tf-idf (Term Frequency * Inverse Document Frequency)
+	- Using Scikit-Learn to Create a SVM Classifier (LinearSVC)
+	- Building a Pipeline using tf-idf and LinearSVC
+
+Section 5: Semantics and Sentiment Analysis
+	- Understanding Word Vectors
+	- Loading a Larger Library to Include More Word Vectors
+	- Measuring the Similarities Between Word Vectors
+	- Normalizing a Word Vector
+	- Determining if a Word is in the Vocabulary Library
+	- Using Vector Arithmetic
+	- Using NLTK's VADER Lexicon to Analyze the Sentiment of a Text
+	- Determining the Intensity/Polarity of a Text
+	- Cleaning the Dataframe to Remove Any Bad or Incomplete Data
+	- Determining the Accuracy of Sentiment Labels
+
+Section 6: Topic Modeling
+	- Preprocessing the Data through a Count Vectorizer
+	- Running a Latent Dirichlet Allocation
+	- Determining which Words were Least and Most Representative of a Text
+	- Finding the Least and Most Important Sentences of a Text
+	- Preprocessing the Data through a tf-idf Vectorizer
+	- Running a Non-Negative Matrix Factorization
+	- Finding Important Keywords and Topics in a Text
+
+Section 7: Deep Learning
+	- Loading a Sample Dataset from Scikit-Learn
+	- Using Keras to Conver a Dataset into Categorical Data
+	- Standardizing the Data Using a MinMaxScaler
+	- Using Keras to Train a Sequential Neural Network with Dense Layers
+	- Predict New Data using the Trained Neural Network
+	- Using Scikit-Learn's Metrics Library to Determine the Model's Performance
+	- Saving and Loading a Model
+	- Tokenizing Text using Keras
+	- Creating an LSTM Model for Text Generation
+	- Using a Random Seed to Generate Text with the LSTM Model and Tokenizer
+	- Developing a ChatBot Using Text Generation
+	- Utilizing Encoders

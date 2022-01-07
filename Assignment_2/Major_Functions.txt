@@ -1,0 +1,83 @@
+Vanilla Python:
+	- open(file_name, mode) - Opens a file for reading, writing or appending. Returns a File Pointer.
+	- FILE*.readlines() - Reads all of the lines and converts them into a list.
+	- FILE*.read() - Reads a single line and returns a string.
+	- FILE*.seek(position)  - Sends the FILE* back to the inputted position
+	- FILE*.write(string) - Writes a string to the File, does not make a new line unless specified with \n.
+	- List.append(object) - Adds an object to the end of a list.
+
+PyPDF2:
+	- PdfFileReader(file_name) - Opens a PDF file for reading. Returns a PDF_Reader Object.
+	- PDF_Reader.getPage(page_num) - Returns a page object from the PDF.
+	- Page.extractText() - Returns the text from the PDF in a single string.
+	- PdfFileWriter(file_name) - Opens a PDF file for writing. Overwrites the Original PDF. Returns a PDF_Writer Object.
+	- PDF_Writer.addPage(text) - Adds a Page of text to the PDF.
+
+Re:
+	- search(pattern, string) - Looks for a specific pattern in the string. Returns a Match object.
+	- findall(pattern, string) - Looks for all instances of a specific pattern in the string. Returns a list of strings that match the pattern.
+	- finditer(pattern, string) - Iterates through the string for a pattern. Returns a Match object. Can be called multiple times to iterate through the remainder of the string.
+	- Match.span() - Returns the location of the match from the given string.
+	- Match.group(index) - If a pattern looks for multiple groups, the group() function can return the contents of that group.
+	
+Spacy:
+	- load(library) - Returns an NLP object with a number of NLP tools, like word banks, word vectors, and processing functions.
+	- NLP(Unicode-String) - Constructor that returns a Doc object for string processing. Splits the string into tokens.
+	- NLP.pipeline - Attribute that stores the function pointers used for string processing.
+	- NLP.add_pipe(function, location) - Adds a processing function to the pipeline.
+	- NLP.Defaults.stop_words - Returns a list of words that are overly common and should be removed from analysis. 
+	(Note: Many of spacy's features are attributes, not functions).
+	- Token.text - Returns the token's text value.
+	- Token.pos_ - Returns the token's part of speech.
+	- Token.tag_ - Returns the token's tag.
+	- Token.dep_ - Returns the token's dependency.
+	- Token.lemma_ - Returns the token's lemma (or stem).
+	- Token.similarity(Token2) - Returns the similarity score between two words (Lion and Cat are similar).
+	- explain(tag) - Elaborates on a specific tag.
+	- Doc.tokens - Returns a list of the string's tokens.
+	- Doc.sents - Returns a list of the string's sentences.
+	- Doc.ents - Returns a list of the string's entities (Well-Known Proper Nouns).
+	- Doc.noun_chunks - Returns a list of noun chunks.
+	- Doc.vector - Returns the doc's word vector, a mathematical representation of the word.
+	- matcher() - Creates a matcher object that uses spacy's own version of RegEx.
+	- matcher.add(Matcher_Name, Callbacks, Patterns) - Adds a new matcher to the matcher object using the patterns.
+	- show_ents(doc) - Explains the Named Entities of the string in detail.
+	- pipeline.SentenceSegmenter(nlp.vocab, strategy) - Splits a string into sentences.
+
+Displacy:
+	- render(Doc, Style, Other Arguments) - Creates a diagram of the string and the relationship between its tokens.
+
+Pandas:
+	- read_csv(file_name) - Converts a CSV file into a Pandas Dataframe (df).
+	- df[column].describe() - Returns the main quantifiers for the data.
+
+Scikit-Learn:
+	- model_selection.train_test_split(X, Y, test_size, seed) - Splits the dataset and its labels into training and testing sets based on the parameters.
+	- linear_model.LogisticRegression(solver) - Returns a model that predicts labels using logistic regression.
+	- lr_model.fit(X_Train, Y_Train) - Fits the logistic regression model with training data.
+	- metrics.confusion_matrix(Y_Test, Predictions) - Finds the True Positive, False Positive, True Negative, False Negative amounts between the predictions and the actual result.
+	- metrics.classification_report(Y_Test, Predictions) - Finds the accuracy, precision, recall, and f1-score of the predictions vs. actual.
+	- naive_bayes.MultinomialNB() - Creates a Bayes Classifier Model that can be fitted with training data.
+	- svm.LinearSVC() - Creates a Support Vector Machine that can be fitted with training data.
+	- feature_extraction.text.CountVectorizer() - A Count Vectorizer that can fit_transform doc objects into feature vectors.
+	- feature_extraction.text.TfidfTransformer() - Uses the data from the Count Vectorizer to compare the sample frequency of terms in a doc object to the other doc objects (the training data).
+	- feature_extraction.text.TfidfVectorizer() - A combination between Count Vectorizer and TfidfTransformer.
+	- pipeline.Pipeline(Classifiers) - Sequences many feature-extraction classifiers in a row.
+	- decomposition.LatentDirichletAllocation - A model used to determine important keywords in a text.
+	- decomposition.NMF - A model used to determine important keywords in a text.
+	- preprocessing.MinMaxScaler - Scales the different columns of a dataset so that they all match with one another.
+NLTK:
+	- sentiment.vader.SentimentIntensityAnalyzer() - An analyzer object that determines the polarity and sentiment of strings.
+	- SentimentIntensityAnalyzer.polarity_scores(string) - Returns the polarity of a string (negative, neutral, positive).
+
+Keras:
+	- utils.to_categorical - Converts a dataset into categorical data.
+	- models.Sequential - Creates a Neural Network Model with Sequential Layers.
+	- layers.Dense - Creates a Dense Layer of Neurons.
+	- model.add(Layer) - Adds a layer to the model.
+	- model.compile(loss, optimizer, metrics) - Compiles the model with the given parameters.
+	- model.fit(X_Train, Y_Train, Epochs) - Fits the training data with the model.
+	- model.evaluate(X_Test, Y_Test) - Puts the testing data through the model and determines its accuracy.
+	- model.save(file_name) - Saves the model into a file.
+	- load_model(file_name) - Loads the model from a file.
+
